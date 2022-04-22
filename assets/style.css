@@ -22,6 +22,22 @@ section{
 	height: 100vh;
 }
 
+.btn{
+	font-family: 'Signika Negative', sans-serif;
+	border-radius: 30px;
+	border: none;
+	font-size: 1.1rem;
+	height: 5vh;
+	width: 20vw;
+	margin-top: 40px;
+	transition: 0.6s;
+}
+
+.btn:hover{
+	cursor: pointer;
+	background-color: lightblue;
+}
+
 .header{
 	width: 100%;
 	height: 20vh;
@@ -64,6 +80,7 @@ section{
 .kant-portrait, .kant-about{
 	margin: 20px;
 }
+
 .kant-portrait{
 	display: flex;
 	justify-content: center;
@@ -84,11 +101,13 @@ section{
     50%{background-position:35% 100%}
     100%{background-position:66% 0%}
 }
+
 @-moz-keyframes KantPortrait {
     0%{background-position:66% 0%}
     50%{background-position:35% 100%}
     100%{background-position:66% 0%}
 }
+
 @keyframes KantPortrait {
     0%{background-position:66% 0%}
     50%{background-position:35% 100%}
@@ -103,6 +122,7 @@ section{
 .kant-about{
 	display: flex;
 	justify-content: center;
+	flex-flow: column;
 	align-items: center;
 	border: 2px solid var(--yellow);
 	width: 60vw;
@@ -112,4 +132,37 @@ section{
 	padding: 2rem;
 }
 
+.crpura{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--lightblue);
+}
 
+.crpura-portrait, .crpura-about{
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	margin: 20px;
+}
+
+
+.crpura-about{
+	border: 2px solid var(--yellow);
+	width: 60vw;
+	height: 80vh;
+}
+
+.crpura-portrait{
+	border: 1px solid var(--yellow);
+	width: 30vw;
+	height: 80vh;
+}
+
+.crpura-portrait-image{
+	width: 30vw;
+	height: 80vh;
+	transition: 0.5s;
+	animation: smooth;
+}
